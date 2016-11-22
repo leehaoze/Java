@@ -14,6 +14,7 @@ public class Double_Array {
     }
 
     public static void Input_String(){
+        Print("请按照 1,2;3,4,5;6,7,8;3.3输入");
         Scanner in = new Scanner(System.in);
         data_ = new String();
         data_ = in.nextLine();
@@ -63,7 +64,7 @@ public class Double_Array {
             ++pos;
         }
         if(temp.length() >= 1)
-        data[count] = Double.parseDouble(temp);
+            data[count] = Double.parseDouble(temp);
         return data;
     }
 

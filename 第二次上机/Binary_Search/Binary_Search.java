@@ -1,11 +1,11 @@
-package Binart_Search;
+package Binary_Search;
 
 import java.util.Scanner;
 
 /**
  * Created by leehaoze on 16/10/27.
  */
-public class Binart_Search {
+public class Binary_Search {
     public static void Input(int [] nums){
         Scanner in = new Scanner(System.in);
         System.out.println("请输入" + nums.length + "个元素:");

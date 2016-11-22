@@ -30,6 +30,8 @@ public class Main {
         String temp;
         Matrix A = new Matrix();
         A.Creat_Matrix();
+        System.out.println("随机生成的矩阵为:");
+        A.Print();
         while(Wait_Order(A)){
             System.out.println("按下回车以继续");
             temp = in.nextLine();

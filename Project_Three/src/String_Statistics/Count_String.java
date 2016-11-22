@@ -31,7 +31,7 @@ public class Count_String {
     }
 
     public static void main(String argsp[]){
-        String ipt = new String();
+        String ipt;
         Scanner in = new Scanner(System.in);
         Print("请输入一个字符串");
         ipt = in.nextLine();

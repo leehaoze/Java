@@ -20,6 +20,10 @@ public class Main {
         row = in.nextInt();
         System.out.println("请输入要修改的值的列数:");
         col = in.nextInt();
+        if(row > A.getRow() || col > A.getCol() || row < 1 || col < 1){
+            System.out.println("超出矩阵的范围");
+            return ;
+        }
         System.out.println("您要修改的元素为:" + A.Get(row,col));
         System.out.println("请输入要修改的值:");
         value = in.nextInt();
@@ -34,6 +38,10 @@ public class Main {
         row = in.nextInt();
         System.out.println("请输入列数:");
         col = in.nextInt();
+        if(row > A.getRow() || col > A.getCol() || row < 1 || col < 1){
+            System.out.println("超出矩阵的范围");
+            return ;
+        }
         System.out.println("您要查找的值为:" + A.Get(row,col));
     }
 

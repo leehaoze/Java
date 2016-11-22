@@ -35,6 +35,7 @@ public class Random_Teacher {
         System.out.println("请输入要抽取的老师的数量:");
         n = in.nextInt();
         String []ans = getRandomTeachers(teachers,n);
+        System.out.println("抽取的老师的姓名为:");
         for (int i = 0;i < n; ++i){
             System.out.println(ans[i]);
         }

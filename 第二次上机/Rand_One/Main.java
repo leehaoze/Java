@@ -31,6 +31,7 @@ public class Main {
 
     public static void main(String []args){
         Init();
+        System.out.println("数组生成完毕");
         while(Input()){
 
         }

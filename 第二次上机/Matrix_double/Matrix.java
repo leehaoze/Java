@@ -9,6 +9,22 @@ public class Matrix {
     private double [][] data;
     private int row,col;
 
+    public int getRow() {
+        return row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public int getCol() {
+        return col;
+    }
+
+    public void setCol(int col) {
+        this.col = col;
+    }
+
     public Matrix(){
     }
 
@@ -19,7 +35,7 @@ public class Matrix {
         System.out.println("请输入矩阵的列数,回车结束:");
         col = in.nextInt();
         data = new double[row+1][col+1];
-        System.out.println("请按如下格式＊输入矩阵:");
+        System.out.println("请按如下格式输入矩阵:");
         System.out.println("1 2 3");
         System.out.println("4 5 6");
         System.out.println("7 8 9");
@@ -33,6 +49,7 @@ public class Matrix {
     }
 
     public  void Set(int row,int col,double value){
+
         data[row - 1][col - 1] = value;
     }
 
@@ -49,7 +66,7 @@ public class Matrix {
 
     public Matrix Add(Matrix b){
         if(row != b.row || col != b.col){
-            System.out.println("该矩阵无法与矩阵B相加");
+            System.out.println("该矩阵无法与矩阵B相加，输出原矩阵");
         }
         else{
             for (int i = 0; i < row; ++i){
@@ -63,7 +80,7 @@ public class Matrix {
 
     public Matrix Multipy(Matrix b){
         if(col != b.row){
-         System.out.println("该矩阵无法与矩阵B想成");
+         System.out.println("该矩阵无法与矩阵B相乘，输出原矩阵");
         }
         else{
             for (int i = 0; i < row; ++i){
